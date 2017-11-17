@@ -6,5 +6,5 @@ function destructivelyRemoveLastDriver (name) {drivers.pop(name)}
 function destructivelyRemoveFirstDriver (name) {drivers.shift(name)}
 function appendDriver (name) {drivers.push(name)}
 function prependDriver (name) {drivers.push(name)}
-function removeLastDriver (name) {drivers.push(name)}
-function removeFirstDriver (name) {drivers.push(name)}
+function removeLastDriver (name) {drivers.slice(0, drivers.length-1)}
+function removeFirstDriver (name) {drivers.slice(1)}
