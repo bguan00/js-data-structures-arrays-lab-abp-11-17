@@ -11,5 +11,7 @@ function appendDriver (name) {
 }
 function prependDriver (name) {const driverscopy=drivers.slice();
 driverscopy.unshift(name); return driverscopy}
-function removeLastDriver (name) {drivers.slice(0, drivers.length-1)}
-function removeFirstDriver (name) {drivers.slice(1)}
+function removeLastDriver (name) {const driverscopy=drivers.slice();
+driverscopy.pop(name); return driverscopy}
+function removeFirstDriver (name) {const driverscopy=drivers.slice();
+driverscopy.shift(name); return driverscopy}
