@@ -9,6 +9,7 @@ function appendDriver (name) {
   newArray.push(name)
   return newArray
 }
-function prependDriver (name) {drivers.splice(0,0,name)}
+function prependDriver (name) {const driverscopy=drivers.slice();
+driverscopy.slice(name); return driverscopy}
 function removeLastDriver (name) {drivers.slice(0, drivers.length-1)}
 function removeFirstDriver (name) {drivers.slice(1)}
