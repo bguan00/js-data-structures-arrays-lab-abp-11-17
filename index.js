@@ -10,8 +10,8 @@ function appendDriver (name) {
   return newArray
 }
 
-function prependDriver (name) {var newArray2 = drivers.slice();
-  newArray2.unshift(name)
-  return newArray2)}
+function prependDriver (name) {var drivers2 = drivers.slice();
+  drivers2.unshift(name);
+  return drivers2)}
 function removeLastDriver (name) {drivers.slice(0, drivers.length-1)}
 function removeFirstDriver (name) {drivers.slice(1)}
