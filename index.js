@@ -4,7 +4,7 @@ function destructivelyAppendDriver (name) {drivers.push(name)}
 function destructivelyPrependDriver (name) {drivers.unshift(name)}
 function destructivelyRemoveLastDriver (name) {drivers.pop(name)}
 function destructivelyRemoveFirstDriver (name) {drivers.shift(name)}
-function appendDriver (...name) {drivers.push(name)}
+function appendDriver (...name) {const newd=[...drivers,...name]}
 function prependDriver (name) {drivers.push(name)}
 function removeLastDriver (name) {drivers.slice(0, drivers.length-1)}
 function removeFirstDriver (name) {drivers.slice(1)}
